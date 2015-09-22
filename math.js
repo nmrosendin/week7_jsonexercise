@@ -14,7 +14,7 @@ $(document).ready(function(){
          // 1. retrieve the fact returned in this json(data)
          // 2. display both number and its fact on the html page
         var fact=data.text;
-         $('#umber').text(number);
+         $('#number').text(number);
          $('#math-fact').text(fact);
        });
    }
@@ -22,5 +22,4 @@ $(document).ready(function(){
   $.get('https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8')
     .done(assignRandomNumber)
     .done(getAndDisplayFact);
-
 });

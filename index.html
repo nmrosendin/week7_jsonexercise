@@ -2,12 +2,18 @@
 <html>
   <head>
     <title>Random Math Fact</title>
+    <link rel="stylesheet" type="text/css" href="math.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Muli">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src='math.js'></script>
   </head>
   <body>
-    <div>#<span id='number'></span>:</div>
+  	<h1>Random Math Facts</h1>
+    <div id='mynumber'> # <span id='number'></span>:</div>
     <div id='math-fact'></div>
+    <div id='button_div'>
+  		<input id='mybutton' type="button" VALUE="New math fact" onClick="history.go(0)">
+  	</div>
   </body>
 
 </html>
