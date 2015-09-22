@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Google books search</h1>
+        <div id = "search-div">
+            <input placeholder="Search" type="text" id="search-bar">
+            <button type="button">click me!</button> 
+        </div>
+  
+        <script type="text/javascript">
+            var book;
+
+            $(document).ready(function(){
+                $('button').click(function() {
+                    console.log("Hi");
+                    $.get('https://www.googleapis.com/books/v1/volumes', {
+                        q: "wild", 
+                        startIndex: 0, 
+                        maxResults: 20
+                    }, 
+                    function(data){
+                        console.log(data);
+                    });
+                });
+            });
+        </script>
+     </body>
+</html>
+
+
